@@ -1,0 +1,14 @@
+services:
+  api:
+    build: ./backend
+    ports: ["8000:8000"]
+    environment:
+      DATABASE_URL: sqlite:///./survey_exchange.db
+      DEV_MODE: "true"
+  web:
+    build: ./frontend
+    ports: ["3000:3000"]
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+      NEXT_PUBLIC_DEMO_USER: demo-student-1
+      NEXT_PUBLIC_DEMO_EMAIL: student@nitc.ac.in
