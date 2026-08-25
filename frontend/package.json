@@ -1,6 +1,7 @@
 {
   "name": "nitc-survey-exchange-web",
   "private": true,
+<<<<<<< HEAD
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,4 +18,9 @@
     "@types/react": "19.0.3",
     "typescript": "5.7.2"
   }
+=======
+  "scripts": {"dev":"next dev","build":"next build","start":"next start","lint":"next lint"},
+  "dependencies": {"@supabase/supabase-js":"^2.49.1","next":"15.1.3","react":"19.0.0","react-dom":"19.0.0"},
+  "devDependencies": {"@types/node":"22.10.5","@types/react":"19.0.3","typescript":"5.7.2"}
+>>>>>>> 5ef99ec (Add Supabase authentication and profile onboarding)
 }
